@@ -13,6 +13,7 @@
         - 1. 需用有django的环境下的python解释器 python.exe
         - 2. pycharm界面上方的"manage"下拉，选择 "Edit Configurations"
         - 3. 在Parameters一栏出填上“runserver”
+            - 也可填上" runserver 127.0.0.1:7963 ", 修改访问的地址和端口号
         - 4. 运行‘manage.py’文件，ok
         - 可用浏览器访问给出的ip地址，控制台会反馈访问信息，状态
 
@@ -20,6 +21,7 @@
     - app: 负责一个具体业务或者一类具体业务的模块
     - conda进入到相应环境下，cd到项目文件
     - python manage.py startapp app_name
+    - 一般地，创建了APP，需要在setting.py中的INSTALLED_APPS里添加APP名字
     
 # 路由系统-urls
 - 路由（看门大爷，前台，领路人）
@@ -119,4 +121,15 @@
     - 以后再编码代码中使用URL的值，原则上都应该使用反向解析
     - 方法：reverse()
         - reverse()的主要作用是将提取的网址按照要求进行替换，计算得到响应所需要的新的网址
+
+
+
+### 一个完整的django使用的步骤
+- 创建django项目 （env_urls_note.md）
+- 创建APP（env_urls_note.md）
+- 配置pycharm启动：runserver（env_urls_note.md）
+- setting.py中的INSTALLED_APPS里添加新创建的app（env_urls_note.md）
+- 迁移数据库（models_note.md）
+- 创建admin （session_分页_类视图_admin.md）
+- 编写urls、views、models
         

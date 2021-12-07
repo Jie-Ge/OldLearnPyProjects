@@ -47,6 +47,8 @@ urlpatterns = [
     url(r'extrem/$', tv.extremParam, {'name': 'liuying'}),
 
     # URL的反向解析（替换网址）
+    # 对应的views.py中使用reverse()
+    # 改变下面的url，但它的name没变，reverse函数。。。？
     url(r'toolongurlllllll/', tv.revParse, name='revvurl'),
 
 
@@ -55,4 +57,18 @@ urlpatterns = [
     url(r'^teacher/', tv.teacher1),
 
     url(r'^v2_exp/', tv.v2_exception),
+
+    url(r'^v9_get/', tv.v9_get),
+    url(r'^v9_post', tv.v9_post),
+
+    url(r'^render_test/', tv.render_test),
+
+    url(r'^get404/', tv.get404),
+
+    # ================ 模板 =====================
+
+    url(r'^one/', tv.one),
+
+    # ************* 类的视图 **************
+    url(r'^teacher/', tv.TeacherListView.as_view()),
 ]

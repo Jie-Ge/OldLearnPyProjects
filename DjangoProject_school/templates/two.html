@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <p>账户名:<input type="text" name="username"></p>
+        <p>对方账户:<input type="text" name="to_username"></p>
+        <p>转账金额:<input type="text" name="monery"></p>
+    <input type="submit">
+</form>
+</body>
+</html>
