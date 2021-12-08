@@ -35,9 +35,17 @@
     - 5、重启 jupyter notebook
     
 # git
-- `Git` -> `Manage Remotes`
+- `Git` -> `Commit`   提交到本地仓库
+- `Git` -> `Push`     推给远程仓库
+
+- 新增项目到github
+    - 1、 `Git` -> `GitHub` -> `Share Project on GitHub`
+    - 2、 填写github上仓库的名字（一般默认为项目名称）
+    - 3、 填写remote的名称（远端仓库所起的（本地）名字），【要与之前的仓库的名称不同】
+    
+- `Git` -> `Manage Remotes`     管理本地仓库与远端仓库的连接（一次 'Share Project on GitHub' 就会新建一个连接）
     - 'Name' : 远端仓库所起的（本地）名字，一般都是叫origin，其实你也可以要Ceres 或者Earth
     - 'URL' : 远端仓库的真实地址
     
-- `Git` -> `Commit`   提交到本地仓库
-- `Git` -> `Push`     推给远程仓库
+- `Git` -> `Pull`   将github上的内容同步到本地（拉）
+- `Git` -> `Clone`     将github上的一个项目克隆到本地
