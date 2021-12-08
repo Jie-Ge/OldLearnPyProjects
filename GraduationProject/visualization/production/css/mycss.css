@@ -1,0 +1,43 @@
+.row1{
+	background-color: white;
+	padding: 1%;
+}
+table,th,td{
+	border: 1px solid rgba(34,36,38,.1);
+}
+table{
+	text-align: left;
+	font-size: 1em;
+    color: rgba(0,0,0,.87);
+    border-collapse: separate;
+}
+th{
+	cursor: auto;
+    background: #F9FAFB;
+    text-align: inherit;
+    color: rgba(0,0,0,.87);
+    padding: .92857143em .78571429em;
+    vertical-align: inherit;
+    font-style: none;
+    font-weight: 700;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+}
+td{
+	padding: .78571429em;
+}
+
+.button_image1{
+    background-image: url(../picture/柱状图.svg);
+    width: 25px;height: 25px;background-repeat:no-repeat ;
+    background-size:25px 25px; border: 0;
+    background-color: transparent;
+
+}
+.button_image2{
+    background-image: url(../picture/饼图.svg);
+    width: 25px;height: 25px;background-repeat:no-repeat ;
+    background-size:25px 25px; border: 0;
+    background-color: transparent;
+
+}

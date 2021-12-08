@@ -1,0 +1,25 @@
+在使用matplotlib的过程中，常常会需要画很多图，但是好像并不能同时展示许多图。
+这是因为python可视化库matplotlib的显示模式默认为阻塞（block）模式。
+什么是阻塞模式那？我的理解就是在plt.show()之后，程序会暂停到那儿，并不会继续执行下去。
+如果需要继续执行程序，就要关闭图片。
+如何展示动态图或多个窗口呢？这就要使用plt.ion()这个函数,使matplotlib的显示模式转换为交互（interactive）模式.
+即使在脚本中遇到plt.show()，代码还是会继续执行。
+下面这段代码是展示两个不同的窗口：
+    plt.ion()    # 打开交互模式
+    # 同时打开两个窗口显示图片
+    plt.figure()  #图片一
+    plt.imshow(i1)
+    plt.figure()    #图片二
+    plt.imshow(i2)
+    # 显示前关掉交互模式
+    plt.ioff()
+    plt.show()
+在plt.show()之前一定不要忘了加plt.ioff()，如果不加，界面会一闪而过，并不会停留
+
+具体的方法请看 create_network.py 文件
+    plt.ion()
+    plt.show()
+    ...
+    ...
+    plt.ioff()
+    plt.show()
