@@ -32,7 +32,8 @@
     - 2、打开这个文件
     - 3、找到py文件中的 # c.NotebookApp.notebook_dir='' 这一行
     - 4、解开注释，写入路径 c.NotebookApp.notebook_dir = 'D:/python3_anaconda_jupyter_notebook'
-    - 5、重启 jupyter notebook
+    - 5、编辑jupyter notebook快捷方式的属性：去掉“目标”一项中后面的 `"%USERPROFILE%"`
+    - 6、重启 jupyter notebook
     
 # git
 - `Git` -> `Commit`   提交到本地仓库
